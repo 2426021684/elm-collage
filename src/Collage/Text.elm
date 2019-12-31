@@ -107,6 +107,7 @@ Off course, you can always specify your own font size explicitly.
 
 import Collage.Core as Core
 import Color exposing (Color)
+import TextWidth exposing (textWidth)
 
 
 
@@ -426,8 +427,7 @@ line newline (Core.Chunk sty str) =
 -}
 width : Text -> Float
 width ((Core.Chunk sty str) as text) =
-  --FIXME: Native.Text.width (toCssFontSpec sty) str
-  height text / 2 * toFloat (String.length str)
+    textWidth (toCssFontSpec sty) str
 
 
 {-| The height of the text when displayed on the user screen.
