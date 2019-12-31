@@ -3,7 +3,7 @@
     "name": "2426021684/elm-collage",
     "summary": "Use timjs/elm-collage instead.",
     "license": "BSD-3-Clause",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "exposed-modules": [
         "Collage",
         "Collage.Render",
